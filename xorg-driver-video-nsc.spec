@@ -1,12 +1,12 @@
 Summary:	X.org video driver for National Semiconductors GEODE processors
 Summary(pl):	Sterownik obrazu X.org dla uk³adów National Semiconductors GEODE
 Name:		xorg-driver-video-nsc
-Version:	2.7.6.2
+Version:	2.7.6.3
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-video-nsc-%{version}.tar.bz2
-# Source0-md5:	2c05afaecf3d63f3fb4cfa791ef07329
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-video-nsc-%{version}.tar.bz2
+# Source0-md5:	9f74489aaeaf9536d476ddc37c354af8
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -18,7 +18,7 @@ BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xf86dgaproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,8 +52,7 @@ National Semiconductors. Obs³uguje uk³ady GXLV (uk³ad towarzysz±cy
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	drivermandir=%{_mandir}/man4
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
@@ -64,4 +63,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/nsc_drv.so
-%{_mandir}/man4/nsc.4x*
+%{_mandir}/man4/nsc.4*
