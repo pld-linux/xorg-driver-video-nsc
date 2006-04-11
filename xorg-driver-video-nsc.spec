@@ -1,12 +1,12 @@
 Summary:	X.org video driver for National Semiconductors GEODE processors
 Summary(pl):	Sterownik obrazu X.org dla uk³adów National Semiconductors GEODE
 Name:		xorg-driver-video-nsc
-Version:	2.7.6.5
+Version:	2.8.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/driver/xf86-video-nsc-%{version}.tar.bz2
-# Source0-md5:	ae4357182de369dbc1e60f287179c9c3
+Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-nsc-%{version}.tar.bz2
+# Source0-md5:	5e4cb211a02ed89e0672273f9cc8bf39
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -19,7 +19,8 @@ BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xf86dgaproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
-BuildRequires:	xorg-xserver-server-devel >= 0.99.3
+BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
+Requires:	xorg-xserver-server >= 1.0.99.901
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
