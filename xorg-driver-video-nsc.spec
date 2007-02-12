@@ -1,5 +1,5 @@
 Summary:	X.org video driver for National Semiconductors GEODE processors
-Summary(pl.UTF-8):   Sterownik obrazu X.org dla układów National Semiconductors GEODE
+Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów National Semiconductors GEODE
 Name:		xorg-driver-video-nsc
 Version:	2.8.2
 Release:	0.1
