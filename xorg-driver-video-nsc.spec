@@ -1,5 +1,5 @@
 Summary:	X.org video driver for National Semiconductors GEODE processors
-Summary(pl):	Sterownik obrazu X.org dla uk≥adÛw National Semiconductors GEODE
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla uk≈Çad√≥w National Semiconductors GEODE
 Name:		xorg-driver-video-nsc
 Version:	2.8.2
 Release:	0.1
@@ -29,11 +29,11 @@ uses the DURANGO kit provided by National Semiconductors. The driver
 supports GXLV (5530 companion chip), SC1200, SC1400 and GX2 (5535
 companion chip).
 
-%description -l pl
-Sterownik obrazu X.org dla uk≥adÛw National Semiconductors GEODE.
-Korzysta z zestawu programistycznego DURANGO udostÍpnionego przez
-National Semiconductors. Obs≥uguje uk≥ady GXLV (uk≥ad towarzysz±cy
-5530), SC1200, SC1400 i GX2 (uk≥ad towarzysz±cy 5535).
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla uk≈Çad√≥w National Semiconductors GEODE.
+Korzysta z zestawu programistycznego DURANGO udostƒôpnionego przez
+National Semiconductors. Obs≈Çuguje uk≈Çady GXLV (uk≈Çad towarzyszƒÖcy
+5530), SC1200, SC1400 i GX2 (uk≈Çad towarzyszƒÖcy 5535).
 
 %prep
 %setup -q -n xf86-video-nsc-%{version}
